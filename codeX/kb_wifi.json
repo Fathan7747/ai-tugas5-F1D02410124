@@ -1,0 +1,18 @@
+{
+  "judul": "Diagnosis gangguan Wi-Fi pada laptop",
+  "batas": "Aturan berasal dari 3 panduan (Microsoft Support, Vanderbilt University IT, dan UW-Madison, diakses 10 Nov 2026) dan hanya mencakup gangguan Wi-Fi pada laptop Windows yang tersambung ke router rumah atau kampus. Hasilnya saran awal, bukan keputusan akhir.",
+  "sumber": {
+      "S1": "Fix Wi-Fi connection issues in Windows, Microsoft Support, https://support.microsoft.com/en-us/help/10741, diakses 10 Nov 2026",
+      "S2": "How to Troubleshoot Network Connectivity Issues, Vanderbilt University IT, https://tdx.vanderbilt.edu/TDClient/33/Portal/KB/Article/274/How-to-Troubleshoot-Network-Connectivity-Issues, diakses 10 Nov 2026",
+      "S3": "Campus Network (Windows 10, 11) - Connectivity Troubleshooting, University of Wisconsin-Madison, https://kb.wisc.edu/wiscnet/internal/page.php?id=6402, diakses 10 Nov 2026"
+  },
+  "aturan": [
+    {"id": "R1", "jika": ["mode pesawat menyala"], "mode": "dan", "maka": "Wi-Fi laptop nonaktif", "sumber": "S1"},
+    {"id": "R2", "jika": ["laptop tidak dapat alamat IP (169.254.x.x)"], "mode": "dan", "maka": "ada masalah alamat IP", "sumber": "S2"},
+    {"id": "R3", "jika": ["ada masalah alamat IP", "laptop terhubung ke Wi-Fi"], "mode": "dan", "maka": "router tidak memberi alamat IP (DHCP)", "sumber": "S3"},
+    {"id": "R4", "jika": ["HP/laptop lain bisa terhubung ke Wi-Fi yang sama"], "mode": "dan", "maka": "masalah ada di laptop", "sumber": "S1"},
+    {"id": "R5", "jika": ["masalah ada di laptop", "ikon adapter jaringan tanda seru kuning"], "mode": "dan", "maka": "driver Wi-Fi bermasalah", "sumber": "S3"},
+    {"id": "R6", "jika": ["tes ping ke router berhasil", "internet lewat Wi-Fi tidak bisa dibuka"], "mode": "dan", "maka": "modem atau ISP bermasalah", "sumber": "S1"},
+    {"id": "R7", "jika": ["internet lancar lewat kabel LAN", "internet lewat Wi-Fi tidak bisa dibuka"], "mode": "dan", "maka": "router Wi-Fi bermasalah", "sumber": "S1"}
+  ]
+}
