@@ -1,4 +1,3 @@
-# Tugas 5 — Sistem Pakar Sederhana: Gangguan Wi-Fi pada Laptop
 
 ## 1. Nama dan NIM
 - Muhammad Fathan Abdullah
