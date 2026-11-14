@@ -6,7 +6,7 @@
 ## 2. Topik dan Cara Menjalankan
 Topik: diagnosis gangguan Wi-Fi pada laptop Windows. Program menanyakan gejala, lalu menyimpulkan penyebabnya beserta alasannya.
 
-- Bahasa: Python 3.8 atau lebih baru (tanpa library tambahan)
+- Bahasa: Python 
 - Menjalankan (dari folder repo):
 - Berkas: `codeX/main.py` (program), `codeX/kb_wifi.json` (aturan)
 
