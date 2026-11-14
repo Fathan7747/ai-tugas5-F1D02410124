@@ -10,6 +10,14 @@ Topik: diagnosis gangguan Wi-Fi pada laptop Windows. Program menanyakan gejala, 
 - Menjalankan (dari folder repo):
 - Berkas: `codeX/main.py` (program), `codeX/kb_wifi.json` (aturan)
 
+**Cara menjalankan:**
+1. Unduh atau clone repo, lalu buka folder `codeX` di VS Code. Pastikan lokasi terminal sama dengan folder tempat `main.py` berada.
+2. `main.py` dan `kb_wifi.json` harus berada di **satu folder yang sama**, karena program membaca aturan dari `kb_wifi.json` di folder tempat ia dijalankan.
+3. Jalankan di terminal:
+   ```
+   python main.py
+   ```
+
 ## 3. Sumber dan Tabel Aturan
 
 | Kode | Sumber |
