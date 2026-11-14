@@ -7,8 +7,8 @@
 Topik: diagnosis gangguan Wi-Fi pada laptop Windows. Program menanyakan gejala, lalu menyimpulkan penyebabnya beserta alasannya.
 
 - Bahasa: Python 3.8 atau lebih baru (tanpa library tambahan)
-- Menjalankan: `python main.py`
-- Berkas: `main.py` (program), `kb_wifi.json` (aturan)
+- Menjalankan (dari folder repo):
+- Berkas: `codeX/main.py` (program), `codeX/kb_wifi.json` (aturan)
 
 ## 3. Sumber dan Tabel Aturan
 
